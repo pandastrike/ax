@@ -1,20 +1,43 @@
-{
-  "name": "ax",
-  "description": "A simple logger",
-  "author": "Border Stylo",
-  "version": "0.0.1",
-  "main" : "./lib/ax.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/borderstylo/ax/"
-  },
-  "files": ["examples","lib","test"],
-  "dependencies": {
-    "colors": "0.5.0"
-  },
-  "devDependencies": {
-    "docco": "0.3.0",
-    "vows": "0.5.11"
-  },
-  "engine": "node >= 0.4.10"
+{ "name": "ax"
+, "version": "0.0.1"
+, "description": "A simple logger"
+, "keywords": [ "log", "logger" ]
+, "licenses": [ { "type": "MIT", "url": "..." } ]
+, "homepage": "..."
+, "bugs": { "web": "..." }
+, "author": { "name": "Dan Yoder"
+  , "email": "dyoder@spire.io"
+  }
+, "maintainers": [
+    { "name": "Dan Yoder"
+    , "email": "dyoder@spire.io"
+    }
+  , { "name": "Jason Campbell"
+    , "email": "dyoder@spire.io"
+    }
+  ]
+, "contributers":   [
+    { "name": "Dan Yoder"
+    , "email": "dyoder@spire.io"
+    }
+  , { "name": "Jason Campbell"
+    , "email": "dyoder@spire.io"
+    }
+  ]
+, "main" : "./lib/ax.js",
+, "repository": { "type": "git"
+  , "url": "..."
+  }
+, "files": [ "examples" ,"lib" ]
+, "directories":
+  { "lib" : "./lib"
+  , "examples": "./examples"
+  }
+, "dependencies": { "colors": "0.5.0"
+  , "underscore": "1.2.0"
+  }
+, "devDependencies": { "docco": "0.3.0"
+  , "vows": "0.5.11"
+  }
+, "engine": "node >= 0.4.10"
 }
