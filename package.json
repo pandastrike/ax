@@ -24,7 +24,7 @@
     , "email": "dyoder@spire.io"
     }
   ]
-, "main" : "./lib/ax.js",
+, "main" : "./lib/ax.js"
 , "repository": { "type": "git"
   , "url": "..."
   }
