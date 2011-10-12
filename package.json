@@ -30,7 +30,7 @@
   ]
 , "main" : "./lib/ax.js"
 , "repository": { "type": "git"
-  , "url": "..."
+  , "url": "git://github.com/spire-io/ax.git"
   }
 , "files": [ "examples" ,"lib" ]
 , "directories":
