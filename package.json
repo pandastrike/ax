@@ -8,7 +8,7 @@
     }
   ]
 , "homepage": "https://github.com/spire-io/ax"
-, "bugs": { "web": "https://github.com/spire-io/ax/issues" }
+, "bugs": { "url": "https://github.com/spire-io/ax/issues" }
 , "author": { "name": "Dan Yoder"
   , "email": "dyoder@spire.io"
   }
@@ -20,7 +20,7 @@
     , "email": "dyoder@spire.io"
     }
   ]
-, "contributers":   [
+, "contributors":   [
     { "name": "Dan Yoder"
     , "email": "dyoder@spire.io"
     }
