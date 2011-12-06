@@ -1,4 +1,3 @@
-
 task 'bundle', 'Generate the browser bundle for ax.js', (options)->
   fs = require 'fs'
   path = require 'path'
@@ -41,16 +40,6 @@ task 'watch', 'Watch lib/ax.js for auto-bundling', (options)->
       invoke 'bundle'
 
 
-task 'docs', 'generate the inline documentation', ->
-  {spawn, exec} = require 'child_process'
-
-  command = [
-    'rm -r docs'
-    'node_modules/docco/bin/docco lib/*.js'
-  ].join(' && ')
-
-  exec(command, (err) -> throw err if err)
-
 option '-p', '--port [PORT]', 'port to run the server on'
 task 'test:server', 'launch a server for the browser tests', (o)->
   browserify = require 'browserify'
@@ -77,15 +66,3 @@ task 'test:server', 'launch a server for the browser tests', (o)->
     res.end(src);
 
   app.listen o.port || 8080
-
-task 'examples:server', 'launch a server for the examples', (options)->
-  path = require 'path'
-  express = require 'express'
-  app = express.createServer()
-  public = path.join __dirname, 'examples'
-
-  app.configure ->
-    app.use express.logger 'dev'
-    app.use express.static public
-
-  app.listen options.port || 8080

@@ -1,5 +1,5 @@
 { "name": "ax"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "description": "A simple logger"
 , "keywords": [ "log", "logger" ]
 , "licenses": [
@@ -42,6 +42,7 @@
   }
 , "devDependencies": { "docco": "0.3.0"
   , "vows": "0.5.11"
+	, "express": "2.5.1"
   }
 , "engine": "node >= 0.4.10"
 }
