@@ -17,7 +17,7 @@
     , "email": "dyoder@spire.io"
     }
   , { "name": "Jason Campbell"
-    , "email": "dyoder@spire.io"
+    , "email": "jason@spire.io"
     }
   ]
 , "contributors":   [
@@ -25,7 +25,13 @@
     , "email": "dyoder@spire.io"
     }
   , { "name": "Jason Campbell"
-    , "email": "dyoder@spire.io"
+    , "email": "jason@spire.io"
+    }
+  , { "name": "Aaveg Mittal"
+    , "email": "amittal@spire.io"
+    }
+  , { "name": "Nikhil Ratan"
+    , "email": "nratan@spire.io"
     }
   ]
 , "main" : "./lib/ax.js"
@@ -42,7 +48,7 @@
   }
 , "devDependencies": { "docco": "0.3.0"
   , "vows": "0.5.11"
-	, "express": "2.5.1"
+  , "express": "2.5.1"
   }
 , "engine": "node >= 0.4.10"
 }
