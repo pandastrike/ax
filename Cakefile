@@ -54,13 +54,11 @@ task 'test:server', 'launch a server for the browser tests', (o)->
     app.use express.logger 'dev'
     app.use express.static public
 
-  app.get '/bundle.js', (req, res)->
+  app.get '/ax.js', (req, res)->
     res.header 'Content-Type', 'text/javascript'
 
     src = browserify({
-      require: {
-        'ax': './lib/ax'
-      }
+      require: ['./lib/ax']
     }).bundle()
 
     res.end(src);

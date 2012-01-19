@@ -1,5 +1,5 @@
 describe('REST API Tutorial', function () {
-var Ax = require('/ax.js') ;
+var Ax = require('./ax.js') ;
 	
   describe('Initialization', function(){
     describe('ax', function(){
