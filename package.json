@@ -1,5 +1,5 @@
 { "name": "ax"
-, "version": "0.1.2"
+, "version": "0.1.3"
 , "description": "A simple logger"
 , "keywords": [ "log", "logger" ]
 , "licenses": [
@@ -32,6 +32,9 @@
     }
   , { "name": "Nikhil Ratan"
     , "email": "nratan@spire.io"
+    }
+  , { "name": "Matthew King"
+    , "email": "mking@spire.io"
     }
   ]
 , "main" : "./lib/ax.js"
