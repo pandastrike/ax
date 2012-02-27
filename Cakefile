@@ -3,7 +3,7 @@ task 'bundle', 'Generate the browser bundle for ax.js', (options)->
   path = require 'path'
   browserify = require 'browserify'
   _module = path.join __dirname, 'lib', 'ax.js'
-  bundle = path.join __dirname, 'lib', 'ax', 'browser', 'ax.js'
+  bundle = path.join __dirname, 'browser', 'ax.js'
   example = path.join __dirname, 'examples', 'javascripts', 'lib', 'ax.js'
 
   src = browserify({ filter : require('uglify-js') })
