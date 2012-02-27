@@ -1,4 +1,5 @@
 var Ax = require('./ax.js') ;
+var _ = require('underscore');
 	
 describe('With default log level', function () {
   beforeEach(function () {
@@ -15,12 +16,15 @@ describe('With default log level', function () {
     expect(this.ax.options.level).toBe('info');
   });
 
-  it('should have stream mapped to console.info', function(){
-    expect(this.ax.stream).toBe(console.info);
-  });
-
   it('should have file has undefined', function(){
     expect(this.ax.options.file).toBeUndefined;
+  });
+
+  it('should log without throwing an error', function(){
+    var that = this;
+    _(['debug', 'info', 'warn', 'error']).each(function (method) {
+      that.ax[method]('test: ' + method);
+    });
   });
 });
 
@@ -36,7 +40,10 @@ describe('With log level set to debug', function () {
     expect(this.ax.options.level).toBe('debug');
   });
 
-  it('should have stream mapped to console.debug', function(){
-    expect(this.ax.stream).toBe(console.debug);
+  it('should log without throwing an error', function(){
+    var that = this;
+    _(['debug', 'info', 'warn', 'error']).each(function (method) {
+      that.ax[method]('test: ' + method);
+    });
   });
 });
