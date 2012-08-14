@@ -1,5 +1,4 @@
 var Ax = require('./ax.js') ;
-var _ = require('underscore');
 	
 describe('With default log level', function () {
   beforeEach(function () {
@@ -22,7 +21,7 @@ describe('With default log level', function () {
 
   it('should log without throwing an error', function(){
     var that = this;
-    _(['debug', 'info', 'warn', 'error']).each(function (method) {
+    ['debug', 'info', 'warn', 'error'].forEach(function (method) {
       that.ax[method]('test: ' + method);
     });
   });
@@ -42,7 +41,7 @@ describe('With log level set to debug', function () {
 
   it('should log without throwing an error', function(){
     var that = this;
-    _(['debug', 'info', 'warn', 'error']).each(function (method) {
+    ['debug', 'info', 'warn', 'error'].forEach(function (method) {
       that.ax[method]('test: ' + method);
     });
   });
