@@ -46,13 +46,13 @@ task 'test:server', 'launch a server for the browser tests', (o)->
   path = require 'path'
   express = require 'express'
   app = express.createServer()
-  public = path.join __dirname, 'test', 'browser'
+  public_path = path.join __dirname, 'test', 'browser'
   ax = path.join __dirname, 'lib', 'ax'
 
 
   app.configure ->
     app.use express.logger 'dev'
-    app.use express.static public
+    app.use express.static public_path
 
   app.get '/ax.js', (req, res)->
     res.header 'Content-Type', 'text/javascript'
