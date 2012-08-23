@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/spire-io/ax.png)](http://travis-ci.org/spire-io/ax)
 ## Ax: Simple Logging Servce
 
 Ax provides a very simple multi-level logging interface.
