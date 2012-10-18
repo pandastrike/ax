@@ -1,3 +1,5 @@
+# Copyright (c) 2011 Border Stylo
+
 task 'bundle', 'Generate the browser bundle for ax.js', (options)->
   fs = require 'fs'
   path = require 'path'

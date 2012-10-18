@@ -1,3 +1,5 @@
+// Copyright (c) 2011 Border Stylo
+
 var Ax = require('./ax.js') ;
 	
 describe('With default log level', function () {

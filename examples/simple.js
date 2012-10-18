@@ -1,3 +1,5 @@
+// Copyright (c) 2011 Border Stylo
+
 var Ax = require("ax");
 var logger = new Ax({level: "debug" });
 
