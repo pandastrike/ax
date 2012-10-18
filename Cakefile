@@ -1,3 +1,25 @@
+
+# Build function and task copied verbatim from:
+# http://arcturo.github.com/library/coffeescript/05_compiling.html
+
+fs = require 'fs'
+
+{print} = require 'sys'
+{spawn} = require 'child_process'
+
+build = (callback) ->
+  coffee = spawn 'coffee', ['-c', '-o', 'lib', 'src']
+  coffee.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  coffee.stdout.on 'data', (data) ->
+    print data.toString()
+  coffee.on 'exit', (code) ->
+    callback?() if code is 0
+
+task 'build', 'Build lib/ from src/', ->
+  build()
+
+
 # Copyright (c) 2011 Border Stylo
 
 task 'bundle', 'Generate the browser bundle for ax.js', (options)->
