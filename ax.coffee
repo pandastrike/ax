@@ -2,7 +2,7 @@
 
 w = (string) -> string.split " "
 
-class Logger
+module.exports = class Ax
   
   _suppress: 
     "error": w "warn info debug verbose"
@@ -36,4 +36,3 @@ class Logger
   
   verbose: (message) -> @log "verbose", message
   
-module.exports = Logger

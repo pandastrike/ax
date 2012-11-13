@@ -1,11 +1,12 @@
 {
   "name": "ax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple logging library",
-  "main": "logger.coffee",
-  "directories": {
-    "example": "examples"
-  },
+  "main": "ax.js",
+  "files": [
+    "ax.js",
+    "ReadMe.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
