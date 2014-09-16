@@ -1,26 +1,25 @@
 {
   "name": "ax",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple logging library",
   "main": "ax.js",
-  "files": [
-    "ax.js",
-    "ReadMe.md"
-  ],
+  "files": [ "ax.coffee", "ax.js", "ReadMe.md" ]
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "coffee -o . -c *.coffee"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/automatthew/ax.git"
+    "url": "git://github.com/pandastrike/ax.git"
   },
   "keywords": [
     "logging",
     "logger"
   ],
-  "author": "Dan Yoder",
-  "license": "BSD",
+  "authors": ["Dan Yoder", "Matthew King"],
+  "license": "MIT",
   "dependencies": {
     "sprintf": "0.1.x"
-  }
+  },
+  "readmeFilename": "README.md"
 }
